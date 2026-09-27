@@ -1,23 +1,28 @@
 pseudo code
 
  introduction du programme
- ajouter librairie cmaths (#include <cmaths>
+ ajouter librairie cmaths (#include <cmaths>)
+
+
 
  1. déclarer les variables
 
- déclarer la distance terre à cube (dx = Offroad_distance) et
- déclarer la distance route à diagonale cube (dy = Road_distance)
+ déclarer la distance terre à cube (dx) et
+ déclarer la distance route à diagonale cube (dy)
 
- extra, déclarer une variable vide pour la distance route, avant hypoténuse (dz = Road_distance_shortcut) et calculer avec OffRoad_distance moins Road_distance
- déclarer la distance terre hypoténuse (L2 = Offroad_hypotenuse), et calculer la racine de (Offroad_distance puissance deux + Road_distance_shortcut puissance deux)
+ (déclarer une variable pour la distance route, avant l2 (l1) et calculer avec OffRoad_distance moins Road_distance)
+ BONUS : déclarer la distance l1 (avec pour valeur par défaut 6) et demander la valeur à l'utilisateur
+ déclarer la distance terre hypoténuse (L2), et calculer la racine carrée de (dy puissance deux + dx moins l1 puissance deux)
 
- déclaler la vitesses route (Speed_road_1) et vitesse terre (Speed_OffRoad2)
+ déclarer la vitesses route (speed_road) et vitesse terre (speed_offroad) en constante
 
  déclarer les variables de temps
 
- déclarer le temps Temps_road_L
+ déclarer le temps Temps_road
 
- calculer le temps de Temps_road_D
+
+
+ 2. calculer le temps de Temps_road_D
 
  Temps_road_L = (Road_distance_shortcut / Speed_road_1) + (Offroad_hypotenuse / Speed_OffRoad2)
 

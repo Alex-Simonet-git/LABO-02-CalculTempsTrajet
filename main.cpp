@@ -3,33 +3,42 @@
 #include <cmath>
 using namespace std;
 
+/**
+ * -----------------------------------------------------
+ * title : CalculTempsTrajet
+ * Created on : 2026-09-25
+ * Last modified on : 2026-09-27
+ * Creator : Alexandra Simonet
+ * -----------------------------------------------------
+ * @return
+ */
+
 int main() {
 
-    cout << "As per the instructions of the LABO 2 exercise, this programs shows how long a robot takes to go to a cube, based on the LABO 2 picture" << endl << endl;
+    cout << "As per the instructions of the LABO-2 exercise, this programs shows how long a robot takes to go retrieve a cube, based on the LABO 2 picture's data" << endl << endl;
 
     //déclaration des variables
     //distance route (dx) et hors-route (dy) en km
     double dx = 10;
     double dy = 3;
 
-    //distance route avant hypoténuse et calcul hors-route hypotenuse
+    //distance route avant l2
     double l1 = 6;
 
-    //BONUS : custom distance before hypotenuse
-    cout << "enter the custom road distance the robot needs to drive" << endl;
+    //BONUS : distance à choix avant l2, donné par l'utilisateur
+    cout << "enter a custom road distance the robot needs to drive on the road" << endl;
     cin >> l1;
 
     double l2 = sqrt (pow(dy,2)+pow((dx - l1),2));
 
-    //vitesse route et hors-route
+    //vitesse route et hors-route en km/h
     const double speed_road = 5;
     const double speed_offroad = 2;
 
 
     //calcul du temps des deux distances
-
-    double Temps_road_L = l1 / speed_road + l2 / speed_offroad;
-    cout << "\n The robot takes " << Temps_road_L << " hours to go to the cube with the shortcut. (trl)" << endl;
+    double temps_total = l1 / speed_road + l2 / speed_offroad;
+    cout << "\n The robot takes " << temps_total << " hours to go to the cube with the shortcut." << endl;
 
 
     return EXIT_SUCCESS;

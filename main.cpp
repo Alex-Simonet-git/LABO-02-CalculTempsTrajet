@@ -5,9 +5,10 @@ using namespace std;
 
 /**
  * -----------------------------------------------------
- * title : CalculTempsTrajet
+ * Title : CalculTempsTrajet
+ * Description : Calcul le trajet du robot jusqu'au cube, basé sur le trajet descrit sur l'image LABO-02
  * Created on : 2026-09-25
- * Last modified on : 2026-09-27
+ * Last modified on : 2026-09-28
  * Creator : Alexandra Simonet
  * -----------------------------------------------------
  * @return
